@@ -1,0 +1,293 @@
+.navbar .divider-vertical.nomargin{
+	margin:0;
+}
+
+@media(min-width: 979px){
+	.nav-icon-button{
+		background:url(../img/navbaricon.png) no-repeat;
+		width: 22px;
+		text-indent: -9999px;
+		opacity: 0.4;
+	}
+
+	.nav-icon-button:hover{
+		opacity: 1;
+	}
+
+	.active .nav-icon-button{
+		opacity: 1;
+	}
+
+}
+
+.thumbnail.fixed-height{
+	border: 1px #AAA solid;
+	overflow: hidden;
+}
+
+@media(min-width: 768px){
+	.thumbnail.fixed-height{
+		height: 286px;
+		position: relative;
+	}
+	.thumbnails li.span4{
+		margin-left: 0;
+		width: 33%;
+		padding-right: 20px;
+		-moz-box-sizing: border-box;
+		-webkit-box-sizing: border-box;
+		box-sizing: border-box;
+	}
+	.thumbnails.container-fluid{
+		margin-left: auto;
+		margin-right: -30px;
+	}
+}
+
+
+@media(max-width: 767px){
+	.thumbnail.fixed-height.overview{
+		height: 296px;
+		position: relative;
+	}
+}
+
+.map{
+	background-position: 15px 12px;
+	
+}
+
+.slide-button{
+	height: 58px;
+	width: 12px;
+	background: url(../img/slide-button.png);
+	position: absolute;
+	left: -12px;
+	cursor: pointer;
+	top: 0;
+}
+
+
+.thumbnail h3{
+	line-height: 18px;
+	font-size: 24px;
+}
+
+.thumbnail p{
+	line-height: 12px;
+	font-size: 12px;
+	color: #666;
+}
+
+
+.friends{
+	background-position: -29px 12px;
+}
+.trips{
+	background-position: -79px 12px;
+}
+.stats{
+	background-position: -125px 12px;
+}
+
+.navbar .brand.newfont.insetType{
+	font-family: 'Lobster', cursive;
+	color: #BBB;
+	text-shadow: white 1px 2px 0px;
+}
+
+.landing-header a{
+	position: relative;
+	display: block;
+	background-image: url(../img/logo.png);
+	width: 270px;
+	height: 79px;
+	margin-left:auto;
+	margin-right: auto;
+	text-indent: -9999px;
+}
+
+
+.landing-header{
+	background: url(../img/subtle_dots.png);
+	margin-top: -10px;
+	padding-top: 50px;
+	padding-bottom: 20px;
+	width: 100%;
+	-moz-box-shadow: 0px 0px 6px #000;
+	-webkit-box-shadow: 0px 0px 6px #000;
+	box-shadow: 0px 0px 6px #000;
+}
+
+html,
+body{
+	height: 100%; 
+	overflow-x: hidden;
+}
+
+body{
+	background-image: url(../img/retina_wood.png);
+}
+
+.wrapper{
+	min-height: 100%;
+	position: relative;
+}
+
+.main-content{
+	padding-bottom: 120px;
+	margin: 0 2%;
+}
+
+
+body .container .hero-unit{
+	background-color: transparent;
+	margin-top: 30px;
+}
+
+.thumbnail{
+	background: #FFF;
+}
+
+.map-wrap{
+	position:relative;
+	height: 600px;
+	width: 100%;
+	background: #fff;
+	border: 1px white solid;
+	-webkit-box-shadow:  0px 0px 6px 0px rgba(0, 0, 0, 0.2);
+	box-shadow:  0px 0px 6px 0px rgba(0, 0, 0, 0.2);
+}
+
+.map-google{
+	position: absolute;
+	height: 100%;
+	width: 100%;
+}
+
+.friends-profile-wrap{
+	position: absolute;
+	top: 0;
+	right: 0;
+	background: rgba(255,255,255,0.7);
+	height: 100%;
+	width: 210px;
+	border-left: 1px #666 solid;
+	box-shadow: 0 0 2px gray;
+}
+
+.map-content{
+	height: 100%;
+	width: 100%;
+}
+
+body .landing-des{
+	width: 90%;
+	margin-left:auto;
+	margin-right: auto;
+	padding: 20px;
+	background: rgba(0,0,0,0.05);
+}
+
+.landing-footer{
+	margin-top: 70px;
+	height: 70px;
+	width: 100%;
+	background: rgba(255,255,255,0.5);
+	position: absolute;
+	bottom: 0;
+	left: 0;
+}
+
+.thumbnail.overview{
+	border: none;
+	border-radius: 0;
+	-webkit-border-radius: 0;
+	-moz-border-radius: 0;
+	box-shadow: none;
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	background: white;
+	padding: 0;
+	height: 296px;
+}
+
+
+.text-overlay{
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	margin-top: -47px;
+	margin-left: -100px;
+}
+
+.facetile ul{
+	list-style: none;
+	margin: 0;
+	margin-right: -3px;
+	padding: 0;
+	overflow: hidden;
+}
+
+.facetile ul li{
+	float: left;
+	overflow: hidden;
+	margin:0;
+	width: 20%;
+}
+
+.face-child-img{
+	margin: 0 1px 1px 0;
+	background-position: center center;
+	background-repeat: no-repeat;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	display: block;
+	height: 74px;
+}
+
+.black-overlay{
+	background: rgba(0,0,0,0.7);
+	position: absolute;
+	width: 100%;
+	height: 296px;
+	float: left;
+	left: 0;
+	top: 0;
+}
+
+
+.text-overlay h2{
+	font-family: 'Lobster', cursive;
+	font-size: 48px;
+	color:white;
+
+}
+
+.text-overlay p{
+	margin-right: 10px;
+	color: white;
+	text-align: right;
+	line-height: 24px;
+	font-size: 14px;
+}
+
+.photo-preview{
+	width: 100%;
+	height: 218px;
+	display: block;
+}
+
+.photo-preview a{
+	width: 100%;
+	height: 100%;
+	display: block;
+	background: no-repeat center center; 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+}
