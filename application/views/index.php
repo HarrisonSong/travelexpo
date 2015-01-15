@@ -1,37 +1,90 @@
-<?php $this->load->view('header.php');?>
- <div class="main-content">
-        <header class="landing-header">
-            <a href="" title="TravelExpo">TravelExpo is a facebook application that helps you to explore travel destinations through your friends travel photos.
-            </a>
-        </header>
-    <div class="container">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href='http://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300,700' rel='stylesheet' type='text/css'>
+    <meta charset="utf-8">
+    <title>TravelExpo - Explore travel destinations with your friends on Facebook</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="og:description" content="Finding your next travel destination through your friends travel photos on Facebook.">
+    <meta name="author" content="">
+<meta property="og:title" content="Explore your friends&#039; trips on TravelExpo" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="<?php echo site_url();?>" />
+<meta property="og:image" content="<?php echo ASSEST_URL?>img/logo128.png" />
+<meta property="og:site_name" content="TravelExpo" />
+<meta property="fb:app_id" content="404341769625504" />
+    <!-- Le styles -->
+    <script type="text/javascript" src="<?php echo ASSEST_URL?>js/jquery-1.8.0.min.js"></script>
+    <script type="text/javascript" src="<?php echo ASSEST_URL?>js/jquery.flexslider-min.js"></script>
+    <link rel="stylesheet" href="<?php echo ASSEST_URL?>css/style_index.css">
+    <link rel="stylesheet" href="<?php echo ASSEST_URL?>css/bootstrap.css">
+    <link rel="stylesheet" href="<?php echo ASSEST_URL?>css/flexslider.css">
 
-        <div class="hero-unit">
-            <div class="row-fluid">
-                 <div class="span4">
-                    <img class="thumbnail" src="<?php echo ASSEST_URL?>img/example.jpg" alt="">
-            </div>
-                <div class="span8">
-                    <h1>Explore the best travel destinations</h1>
-                    <p>through your friends facebook photos and make it more fun to plan future trips!</p>
-                    <p><a href="" class="btn btn-primary btn-large">Login in using Facebook</a></p>
-                </div>
-               
+    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+      <![endif]-->
+      <script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-34501345-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+  </head>
+  <body>
+    <div class="wrapper homepage">
+       <div class="content">
+
+            <h1 class="logo">TravelExpo</h1>
+            <h2 class="tagline">Explore your friends' trips</h2>
+            <h3 class="tagline">Finding your next travel destination through your friends' travel photos on Facebook</h3>
+            <p><a href="<?php echo site_url("general/login")?>" class="btn btn-primary btn-large">Login in using Facebook</a></p>            
+
+
+        <div class="slide-wrap">
+            <div class="flexslider">
+            <ul class="slides">
+                <li>
+                  <img src="<?php echo ASSEST_URL?>img/screen/photo1.jpg" />
+              </li>
+              <li>
+                  <img src="<?php echo ASSEST_URL?>img/screen/photo2.jpg" />
+              </li>
+              <li>
+                  <img src="<?php echo ASSEST_URL?>img/screen/photo3.jpg" />
+              </li>
+          </ul>
+      </div> 
         </div>
-    </div>
-    <div class="well row-fluid landing-des">
-        <div class="span4">
-            <h2>Map</h2>
-            <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.</p>
-        </div>
-        <div class="span4">
-            <h2>Friends</h2>
-            <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.</p>
-        </div>
-        <div class="span4">
-            <h2>Fun</h2>
-            <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.</p>
-        </div>
-    </div>
-</div> <!-- /container -->
-<?php $this->load->view('footer.php');?>
+
+  </div>   
+</div>
+<div class="footer">
+    <span class="at">© 2012 TravelExpo</span>
+<ul class="footer-links floats">
+    <li><a href="#">Privacy Policy</a></li>
+    <li><a href="#">Terms of Service</a></li>
+      <li><a href="#">User Support</a></li>
+    <li><a href="#">About</a></li>
+    <li><a href="#">Contact</a></li>
+</ul>
+</div>
+<script type="text/javascript">
+$(window).load(function() {
+  $('.flexslider').flexslider({
+    animation: "slide"
+});
+});
+
+</script>
+
+</body>
+</html>

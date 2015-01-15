@@ -1,5 +1,4 @@
 <?php  if ( ! defined('BASEPATH')) exit('No direct script access allowed');
-
 /*
 |--------------------------------------------------------------------------
 | Base Site URL
@@ -17,7 +16,6 @@
 $config['base_url'] = ((isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] == "on") ? "https" : "http");
 $config['base_url'] .= "://".$_SERVER['HTTP_HOST'];
 $config['base_url'] .= str_replace(basename($_SERVER['SCRIPT_NAME']),"",$_SERVER['SCRIPT_NAME']); 
-
 /*
 |--------------------------------------------------------------------------
 | Index File
@@ -25,7 +23,7 @@ $config['base_url'] .= str_replace(basename($_SERVER['SCRIPT_NAME']),"",$_SERVER
 |
 | Typically this will be your index.php file, unless you've renamed it to
 | something else. If you are using mod_rewrite to remove the page set this
-| variable so that it is blank.
+| variable so that is blank.
 |
 */
 $config['index_page'] = 'index.php';
@@ -226,7 +224,7 @@ $config['cache_path'] = '';
 | MUST set an encryption key.  See the user guide for info.
 |
 */
-$config['encryption_key'] = '';
+$config['encryption_key'] = 'aBD*R$z12^5';
 
 /*
 |--------------------------------------------------------------------------
@@ -251,6 +249,7 @@ $config['sess_expiration']		= 7200;
 $config['sess_expire_on_close']	= FALSE;
 $config['sess_encrypt_cookie']	= FALSE;
 $config['sess_use_database']	= FALSE;
+//$config['sess_use_database']	= TRUE;
 $config['sess_table_name']		= 'ci_sessions';
 $config['sess_match_ip']		= FALSE;
 $config['sess_match_useragent']	= TRUE;
@@ -358,7 +357,5 @@ $config['rewrite_short_tags'] = FALSE;
 |
 */
 $config['proxy_ips'] = '';
-
-
 /* End of file config.php */
 /* Location: ./application/config/config.php */
